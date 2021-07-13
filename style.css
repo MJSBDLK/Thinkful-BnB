@@ -42,15 +42,30 @@ main img {
   align-items: center;
   justify-content: center;
   padding: 5px;
+  align-content: space-evenly;
 }
 
 .item {
   flex: 1;
   margin: 5px;
+  align-self: center;
+  justify-content: flex-start;
+}
+
+.fieldPair {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin: 5;
+  align-content: space-between;
+  align-self: stretch;
 }
 
 .item-double {
   flex: 2;
+  margin: 5px;
+  flex-wrap: wrap;
+  align-self: left
 }
 
 fieldset {
@@ -68,7 +83,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 64px;
   color: #fff;
   text-align: center;
   margin: 0;
@@ -96,6 +111,7 @@ header nav ul li a {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  justify-content: center;
 }
 
 form label {
@@ -115,6 +131,8 @@ form button {
   font-size: 24px;
   padding: 15px;
   width: 100%;
+  flex: 1;
+  align-self: center;
 }
 
 /* -------  Footer ------- */
@@ -145,6 +163,17 @@ footer p {
     text-align: left;
   }
 
+  .item {
+    margin: 0 5px 0 5px;
+    align-self: flex-start;
+  }
+
+  .fieldPair {
+    flex: 1;
+    margin: 0px;
+    flex-direction: column;
+  }
+
   header nav {
     margin: 5px;
   }
@@ -157,6 +186,24 @@ footer p {
     display: flex;
     flex-direction: row;
     padding: 5px;
+  }
+
+}
+
+@media all and (max-width: 360px) {
+  .fieldPair {
+    font-size: smallest;
+  }
+
+  fieldset {
+    margin: 0;
+    padding: 0;
+  }
+
+  .item {
+    flex: 1;
+    margin: 0;
+    justify-content: flex-start;
   }
 
 }
