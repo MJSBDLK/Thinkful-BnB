@@ -18,14 +18,14 @@
   </head>
 
   <body>
-    <header>
-      <div class="logo">Thinkfulbnb</div>
+    <header class="group">
+      <div class="logo item">Thinkfulbnb</div>
       <nav>
-        <ul id="menu">
-          <li><a href="#stay">Stay</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#ideas">Ideas</a></li>
-          <li><a href="#host">Host</a></li>
+        <ul id="menu" class="item">
+          <li class="item"><a href="#stay">Stay</a></li>
+          <li class="item"><a href="#about">About</a></li>
+          <li class="item"><a href="#ideas">Ideas</a></li>
+          <li class="item"><a href="#host">Host</a></li>
         </ul>
       </nav>
     </header>
@@ -35,6 +35,34 @@
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
+        <fieldset name="reservation-fieldset" form="reservation-form">
+          <form name="reservation-form" id="reservation-form">
+            <div li class="group">
+              <label class="item" for="location">Location</label>
+              <input class="item" id="location" type="text" name="location" placeholder="Search destination"/>
+            </div>
+            <div li class="group">
+              <label class="item" for="arrive">Arrive</label>
+              <input class="item" id="arrive" type="date" name="arrive" />
+            </div>
+            <div li class="group">
+              <label class="group" for="depart">Depart</label>
+              <input class="item" id="depart" type="date" name="depart" />
+            </div>
+            <div li class="group">
+              <label class="item" for= "type">Type</label>
+              <select class="item" id="type" name="type" size="1">
+                <option value="apartment">Apartment</option>
+                <option value="barn">Barn</option>
+                <option value="castle">Castle</option>
+                <option value="houseboat">Houseboat</option>
+                <option value="tiny-house">Tiny House</option>
+                <option value="yacht">Yacht</option>
+                <option value="yurt">Yurt</option>
+              </select>
+            </div>
+          </form>
+      </fieldset>
       </section>
 
       <!-- About -->

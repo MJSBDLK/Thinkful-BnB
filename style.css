@@ -39,6 +39,9 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
 }
 
 .item {
@@ -50,9 +53,14 @@ main img {
   flex: 2;
 }
 
+fieldset {
+  border: 0;
+}
+
 /* -------  Navigation ------- */
 
 header {
+  display: flex;
   background-color: #ff385c;
   padding-bottom: 10px;
   text-align: center;
@@ -64,7 +72,7 @@ header {
   color: #fff;
   text-align: center;
   margin: 0;
-  padding-top: 20px;
+  /*padding-top: 20px;*/
 }
 
 header nav {
@@ -123,21 +131,22 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-midth: 600px) {
+@media all and (min-width: 600px) {
 
   header {
     display: flex;
     justify-content: space-between;
-    padding: 0px 30px;
+    padding: 5px;
   }
 
   .logo {
-    margin: 14px 0;
-    padding: 0;
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
   }
 
   header nav {
-    margin: 8px;
+    margin: 5px;
   }
 
   header nav ul li a:hover {
@@ -147,6 +156,7 @@ footer p {
   .group {
     display: flex;
     flex-direction: row;
+    padding: 5px;
   }
 
 }
