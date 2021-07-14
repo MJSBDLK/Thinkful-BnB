@@ -19,7 +19,7 @@
 
   <body>
     <header class="group">
-      <div class="logo item">Thinkfulbnb</div>
+      <div class="logo item-double">Thinkfulbnb</div>
       <nav>
         <ul id="menu" class="item">
           <li class="item"><a href="#stay">Stay</a></li>
@@ -38,20 +38,20 @@
         <fieldset name="reservation-fieldset" form="reservation-form">
           <form name="reservation-form" id="reservation-form" class="group">
             <div li class="fieldPair">
-              <label class="item" for="location">Location</label>
-              <input class="item-double" id="location" type="text" name="location" placeholder="Search destination"/>
+              <label class="" for="location">Location</label>
+              <input class="item" id="location" type="text" name="location" placeholder="Search destination"/>
             </div>
             <div li class="fieldPair">
-              <label class="item" for="arrive">Arrive</label>
-              <input class="item-double" id="arrive" type="date" name="arrive" />
+              <label class="" for="arrive">Arrive</label>
+              <input class="item" id="arrive" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="arrive" placeholder="mm/dd/yyyy" />
             </div>
             <div li class="fieldPair">
-              <label class="item" for="depart">Depart</label>
-              <input class="item-double" id="depart" type="date" name="depart" />
+              <label class="" for="depart">Depart</label>
+              <input class="item" id="depart" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="depart" placeholder="mm/dd/yyyy" />
             </div>
             <div li class="fieldPair">
-              <label class="item" for= "type">Type</label>
-              <select class="item-double" id="type" name="type" size="1">
+              <label class="" for= "type">Type</label>
+              <select class="item" id="type" name="type" size="1">
                 <option value="apartment">Apartment</option>
                 <option value="barn">Barn</option>
                 <option value="castle">Castle</option>
