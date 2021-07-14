@@ -52,10 +52,6 @@ main img {
   justify-content: flex-start;
 }
 
-.photo {
-  
-}
-
 .fieldPair {
   display: flex;
   flex-direction: row;
